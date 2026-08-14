@@ -190,7 +190,7 @@ createRoot(document.getElementById('root')).render(
 
 import { createRoot } from "react-dom/client";
 
-/*
+
 
 function Weather() {
 
@@ -205,7 +205,7 @@ function Weather() {
   return (
     <>
       <h1>The Weather</h1>
-      <p>{weatherCard.city}</p>
+      <h2>🌤️ {Weather.city}</h2>
     <p>{weatherCard.weatherCondition}</p>
     <p>Temperature: {weatherCard.temperature}</p>
     <p>Humidity: {weatherCard.humidity}</p>
@@ -217,7 +217,11 @@ function Weather() {
   );
 }
 
-*/
+createRoot(document.getElementById("root")).render(
+<Weather/>
+)
+
+/*
 
 import Weather  from "./components/weatherCard";
 
@@ -237,3 +241,4 @@ createRoot(document.getElementById("root")).render(
 <Weather/>
 )
 
+*/
