@@ -1,23 +1,12 @@
+import React from 'react'
+import './weather.css'
 
-function Weather() {
-
-    const weatherCard = {
-    'city': 'Johannesburg',
-    'weatherCondition': 'Sunny',
-    'temperature': 11,
-    'humidity': 45
-
-  }
-
+const WeatherCard = () => {
   return (
-    <>
-    <h1>The Weather</h1>
-    <p>{weatherCard.city}</p>
-    <p>{weatherCard.weatherCondition}</p>
-    <p>Temperature: {weatherCard.temperature}</p>
-    <p>Humidity: {weatherCard.humidity}</p>
-    </>
-  );
+    <div>
+      <h1>Weather</h1>
+    </div>
+  )
 }
-  
-export default Weather
+
+export default WeatherCard
