@@ -4,7 +4,7 @@ import WeatherCard from './components/WeatherCard'
 const App = () => {
   return (
     <>
-    <div>
+    <div className='app'>
       <WeatherCard />
     </div>
     </>
