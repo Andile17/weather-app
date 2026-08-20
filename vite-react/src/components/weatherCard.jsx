@@ -1,23 +1,21 @@
+import React from 'react'
+import './weather.css'
+import clear_icon from '../assets/clear.png'
 
-function Weather() {
-
-    const weatherCard = {
-    'city': 'Johannesburg',
-    'weatherCondition': 'Sunny',
-    'temperature': 11,
-    'humidity': 45
-
-  }
-
+const WeatherCard = () => {
   return (
-    <>
-    <h1>The Weather</h1>
-    <p>{weatherCard.city}</p>
-    <p>{weatherCard.weatherCondition}</p>
-    <p>Temperature: {weatherCard.temperature}</p>
-    <p>Humidity: {weatherCard.humidity}</p>
-    </>
-  );
+    <div className='weather'>
+
+        <div>
+          <img src={clear_icon} className='weather-icon'></img>
+          </div>
+          <p className='temperature'>16c</p>
+          <p className='location'>London</p>
+          
+        </div>
+      
+
+  )
 }
-  
-export default Weather
+
+export default WeatherCard
