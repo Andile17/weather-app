@@ -1,11 +1,13 @@
 import Navbar from "./components/Navbar";
-import Weather from "./components/Weather";
+import { Outlet } from "react-router-dom";
 
 function App() {
   return (
     <>
       <Navbar />
-      <Weather />
+      <main className="main-content">
+        <Outlet />
+      </main>
     </>
   );
 }

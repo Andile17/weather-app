@@ -1,5 +1,5 @@
-
-import Weather from './components/Weather'
+import Navbar from './components/Navbar'
+import {Outlet} from "react-router-dom"
 
 
 //1. in our app.jsx file we removed everything and added this component
@@ -41,9 +41,11 @@ import Weather from './components/Weather'
 const App = () => {
   return (
     <div className='app'>
-      <Weather/>
+      <Navbar/>
+      <main className='main-content'>
+        <Outlet/>
+      </main>
     </div>
   )
 }
 export default App
-
